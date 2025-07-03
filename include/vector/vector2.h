@@ -18,16 +18,13 @@ public:
 
     Vector2() : Vector<T, 2>(),
         x(INIT_VECTOR_PROPERTY(0)),
-        y(INIT_VECTOR_PROPERTY(1)),
-        INIT_SWIZZLES_2D(x, y)
-
+        y(INIT_VECTOR_PROPERTY(1))
     {
     }
 
     Vector2(T arg1, T arg2) : Vector<T, 2>({ arg1, arg2 }),
         x(INIT_VECTOR_PROPERTY(0)),
-        y(INIT_VECTOR_PROPERTY(1)),
-        INIT_SWIZZLES_2D(x, y)
+        y(INIT_VECTOR_PROPERTY(1))
     {
     }
 
