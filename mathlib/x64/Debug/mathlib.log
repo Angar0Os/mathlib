@@ -1,0 +1,3 @@
+﻿cl : command line  warning D9002: ignoring unknown option '/std:c++23preview'
+  main.cpp
+  mathlib.vcxproj -> C:\Users\rgaqu\Documents\GitHub\Perso\mathlib\x64\Debug\mathlib.exe
