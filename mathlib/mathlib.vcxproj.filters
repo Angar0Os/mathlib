@@ -44,7 +44,7 @@
     <ClInclude Include="..\include\swizzle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\swizzle_macro.h">
+    <ClInclude Include="swizzle3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

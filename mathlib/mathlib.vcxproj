@@ -131,12 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\swizzle.h" />
-    <ClInclude Include="..\include\swizzle_macro.h" />
     <ClInclude Include="..\include\utils.h" />
     <ClInclude Include="..\include\vector.h" />
     <ClInclude Include="..\include\vector\vector2.h" />
     <ClInclude Include="..\include\vector\vector3.h" />
     <ClInclude Include="..\include\vector_properties.h" />
+    <ClInclude Include="swizzle3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
