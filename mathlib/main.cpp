@@ -5,5 +5,6 @@ using namespace math;
 
 int main()
 {
+    auto t = math::Identity<Mat2>();
     return 0;
 }
