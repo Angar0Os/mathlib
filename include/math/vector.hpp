@@ -155,7 +155,7 @@ namespace math
 	private:
 	};
 
-	// UTILS FOR VECTORS
+	// UTILS TYPES FOR VECTORS
 
 	using Vec2 = Vec<2, float32>;
 	using Vec3 = Vec<3, float32>;
