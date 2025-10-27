@@ -130,13 +130,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\swizzle.h" />
-    <ClInclude Include="..\include\utils.h" />
-    <ClInclude Include="..\include\vector.h" />
-    <ClInclude Include="..\include\vector\vector2.h" />
-    <ClInclude Include="..\include\vector\vector3.h" />
-    <ClInclude Include="..\include\vector_properties.h" />
-    <ClInclude Include="swizzle3.h" />
+    <ClInclude Include="..\include\math\common.hpp" />
+    <ClInclude Include="..\include\math\math.hpp" />
+    <ClInclude Include="..\include\math\matrix.hpp" />
+    <ClInclude Include="..\include\math\quaternion.hpp" />
+    <ClInclude Include="..\include\math\transform.hpp" />
+    <ClInclude Include="..\include\math\vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
