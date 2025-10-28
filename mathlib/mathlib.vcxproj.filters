@@ -41,5 +41,8 @@
     <ClInclude Include="..\include\math\vector.hpp">
       <Filter>Header Files\math</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\math\simd.hpp">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

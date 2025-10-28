@@ -7,6 +7,7 @@
 #include <cstddef>
 #include <limits>
 #include <type_traits>
+#include <math/simd.hpp>
 
 namespace math
 {

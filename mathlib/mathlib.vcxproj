@@ -140,6 +140,7 @@
     <ClInclude Include="..\include\math\math.hpp" />
     <ClInclude Include="..\include\math\matrix.hpp" />
     <ClInclude Include="..\include\math\quaternion.hpp" />
+    <ClInclude Include="..\include\math\simd.hpp" />
     <ClInclude Include="..\include\math\transform.hpp" />
     <ClInclude Include="..\include\math\vector.hpp" />
   </ItemGroup>
