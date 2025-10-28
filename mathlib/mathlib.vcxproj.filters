@@ -13,11 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\vector">
-      <UniqueIdentifier>{5e66c3e5-e0b5-4fad-a324-deeab2133eca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\vector">
-      <UniqueIdentifier>{96728745-0738-453c-9544-305ab6ce7918}</UniqueIdentifier>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{dd433113-9bd0-4817-a9ff-7441d5c55f75}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -26,26 +23,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\vector.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\include\math\common.hpp">
+      <Filter>Header Files\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\utils.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\include\math\math.hpp">
+      <Filter>Header Files\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\vector\vector2.h">
-      <Filter>Header Files\vector</Filter>
+    <ClInclude Include="..\include\math\matrix.hpp">
+      <Filter>Header Files\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\vector_properties.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\include\math\quaternion.hpp">
+      <Filter>Header Files\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\vector\vector3.h">
-      <Filter>Header Files\vector</Filter>
+    <ClInclude Include="..\include\math\transform.hpp">
+      <Filter>Header Files\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\swizzle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="swizzle3.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\include\math\vector.hpp">
+      <Filter>Header Files\math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
