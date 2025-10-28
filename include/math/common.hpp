@@ -64,15 +64,55 @@ namespace math
 	}
 
 	template<std::totally_ordered T>
-	constexpr T Min(T min, T max)
+	constexpr T Min(T a, T b)
 	{
-		return (min < max) ? min : max;
+		return (a < b) ? a : b;
 	}
 
 	template<std::totally_ordered T>
-	constexpr T Max(T min, T max)
+	constexpr T Max(T a, T b)
 	{
-		return (min > max) ? min : max;
+		return (a > b) ? a : b;
+	}
+
+	template<typename T>
+	constexpr T Lerp(T a, T b, T t)
+	{
+		return a + t * (b - a);
+	}
+
+	template<typename T>
+	constexpr T Smoothstep(T edge0, T edge1, T x)
+	{
+		T t = Clamp((x - edge0) / (edge1 - edge0), T(0), T(1));
+		return t * t * (3 - 2 * t);
+	}
+
+	template<typename T>
+	constexpr T Sign(T value)
+	{
+		return (value > T(0)) ? T(1) : (value < T(0)) ? T(-1) : T(0);
+	}
+	
+	template<typename T>
+	constexpr T Saturate(T x)
+	{
+		return Clamp(x, T(0), T(1));
+	}
+
+	template<typename T>
+	constexpr T Pow(T base, int32 exponent)
+	{
+		if (exponent == 0) return T(1);
+		if (exponent < 0) return T(1) / Pow(base, -exponent);
+
+		T result = base;	
+		for (int32 i = 1; i < exponent; ++i)
+		{
+			result *= base;
+		}
+
+		return result;
 	}
 }
 

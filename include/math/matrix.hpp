@@ -167,6 +167,46 @@ namespace math
 
 			return result;
 		}
+
+		Vec<R, T> GetColumn(size_t col) const
+		{
+			assert(col < C);
+			Vec<R, T> result;
+			for (size_t row = 0; row < R; ++row)
+			{
+				result[row] = (*this)(row, col);
+			}
+			return result;
+		}
+
+		Vec<C, T> GetRow(size_t row) const
+		{
+			assert(row < R);
+			Vec<C, T> result;
+			for (size_t col = 0; col < C; ++col)
+			{
+				result[col] = (*this)(row, col);
+			}
+			return result;
+		}
+
+		void SetColumn(size_t col, const Vec<R, T>& v)
+		{
+			assert(col < C);
+			for (size_t row = 0; row < R; ++row)
+			{
+				(*this)(row, col) = v[row];
+			}
+		}
+
+		void SetRow(size_t row, const Vec<C, T>& v)
+		{
+			assert(row < R);
+			for (size_t col = 0; col < C; ++col)
+			{
+				(*this)(row, col) = v[col];
+			}
+		}
 	};
 
 	// UTILS TYPES 
