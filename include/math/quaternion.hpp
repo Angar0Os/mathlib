@@ -240,6 +240,22 @@ namespace math
 		return a.x * b.x + a.y * b.y + a.z * b.z + a.w * b.w;
 	}
 
+	inline Quaternion Nlerp(const Quaternion& a, const Quaternion& b, float32 t)
+	{
+		Quaternion q0 = a;
+		Quaternion q1 = b;
+
+		float32 dot = Dot(q0, q1);
+
+		if (dot < 0.0f)
+		{
+			q1 = q1 * -1.0f;
+		}
+
+		Quaternion result = q0 * (1.0f - t) + q1 * t;
+		return result.Normalize();
+	}
+
 	inline Quaternion Slerp(const Quaternion& a, const Quaternion& b, float32 t)
 	{
 		Quaternion q0 = a.Normalize();
@@ -265,22 +281,6 @@ namespace math
 		float32 w1 = std::sin(t * theta) / sinTheta;
 
 		return q0 * w0 + q1 * w1;
-	}
-
-	inline Quaternion Nlerp(const Quaternion& a, const Quaternion& b, float32 t)
-	{
-		Quaternion q0 = a;
-		Quaternion q1 = b;
-
-		float32 dot = Dot(q0, q1);
-
-		if (dot < 0.0f)
-		{
-			q1 = q1 * -1.0f;
-		}
-
-		Quaternion result = q0 * (1.0f - t) + q1 * t;
-		return result.Normalize();
 	}
 
 	inline Quaternion RotationBetween(const Vec3& from, const Vec3& to)

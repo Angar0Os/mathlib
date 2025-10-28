@@ -358,12 +358,12 @@ namespace math
 		return result;
 	}
 
-	inline constexpr Vec3 Vec3Right()	{ return Vec3(1, 0, 0);	}
-	inline constexpr Vec3 Vec3Left()	{ return Vec3(-1, 0, 0);}
-	inline constexpr Vec3 Vec3Up()		{ return Vec3(0, 1, 0); }
-	inline constexpr Vec3 Vec3Down()	{ return Vec3(0, -1, 0);}
-	inline constexpr Vec3 Vec3Forward() { return Vec3(0, 0, 1); }
-	inline constexpr Vec3 Vec3Back()	{ return Vec3(0, 0, -1);}
+	inline Vec3 Vec3Right()	{ return Vec3(1, 0, 0);	}
+	inline Vec3 Vec3Left()	{ return Vec3(-1, 0, 0);}
+	inline Vec3 Vec3Up()		{ return Vec3(0, 1, 0); }
+	inline Vec3 Vec3Down()	{ return Vec3(0, -1, 0);}
+	inline Vec3 Vec3Forward() { return Vec3(0, 0, 1); }
+	inline Vec3 Vec3Back()	{ return Vec3(0, 0, -1);}
 }
 
 #endif //MATH_VECTOR_HPP
